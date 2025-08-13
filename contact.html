@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2; /* light baby pink */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffb6c1; /* deeper pink for header */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ff6699;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4d88;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <section>
+        <form method="post" action="/send-message">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+
+            <label>Message:</label>
+            <textarea name="message" placeholder="Write your message here" rows="5"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
